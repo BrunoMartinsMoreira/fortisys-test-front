@@ -39,8 +39,8 @@ export const CreateOrEditProduct = ({
       >
         <AddOrEditProductsHeader title={headerTitle} />
         <Grid
-          templateRows={["repeat(5, 1fr)", "repeat(2, 1fr)"]}
-          templateColumns={["1fr", "repeat(3, 1fr)"]}
+          templateRows={["repeat(3, 1fr)", "repeat(2, 1fr)"]}
+          templateColumns={["1fr", "repeat(2, 1fr)"]}
           gap="4"
           alignItems="center"
         >

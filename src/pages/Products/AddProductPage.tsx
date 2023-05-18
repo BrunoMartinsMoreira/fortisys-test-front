@@ -71,7 +71,7 @@ export const AddProductPage = () => {
       headerTitle="Cadastrar produto"
       btnText="SALVAR"
     >
-      <GridItem colSpan={[1, 2]} rowSpan={1}>
+      <GridItem colSpan={[1, 3]} rowSpan={1}>
         <Input
           inputName="name"
           size="md"
@@ -82,7 +82,6 @@ export const AddProductPage = () => {
           {...register("name")}
         />
       </GridItem>
-      <GridItem colSpan={1} rowSpan={1}></GridItem>
       <GridItem colSpan={1} rowSpan={1}>
         <CustomNumberInput
           label="Preço do produto"
@@ -93,7 +92,7 @@ export const AddProductPage = () => {
         />
       </GridItem>
 
-      <GridItem colSpan={1} rowSpan={1}>
+      <GridItem colSpan={[1, 2]} rowSpan={1}>
         <CustomNumberInput
           label="Estoque"
           prefix="UNI"

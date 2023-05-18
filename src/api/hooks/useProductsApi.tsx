@@ -12,6 +12,11 @@ export const useProductsApi = () => {
       params: {
         page: params?.page,
         perPage: params?.perPage ?? 10,
+        name: params?.name,
+        minPrice: params?.minPrice,
+        maxPrice: params?.maxPrice,
+        minQuantity: params?.maxQuantity,
+        maxQuantity: params?.maxQuantity,
       },
     });
 
@@ -33,7 +38,7 @@ export const useProductsApi = () => {
     const response = await api.post("/products", {
       name,
       price: parseFloat(price),
-      stockQuantity: parseFloat(stockQuantity),
+      stockQuantity: parseInt(stockQuantity),
     });
 
     return response.data;
@@ -46,7 +51,7 @@ export const useProductsApi = () => {
     const response = await api.patch(`/products/${productId}`, {
       name: data.name,
       price: parseFloat(data.price),
-      stockQuantity: parseFloat(data.stockQuantity),
+      stockQuantity: parseInt(data.stockQuantity),
     });
 
     return response.data;

@@ -81,7 +81,7 @@ export const EditProductPage = () => {
       headerTitle="Editar produto"
       btnText="SALVAR"
     >
-      <GridItem colSpan={[1, 2]} rowSpan={1}>
+      <GridItem colSpan={[1, 3]} rowSpan={1}>
         <Input
           inputName="name"
           size="md"
@@ -94,14 +94,14 @@ export const EditProductPage = () => {
       </GridItem>
       <GridItem colSpan={1} rowSpan={1}>
         <CustomNumberInput
-          label="Preço de custo"
+          label="Preço do produto"
           prefix="R$"
           placeholder="00,00"
           error={errors.price}
           {...register("price")}
         />
       </GridItem>
-      <GridItem colSpan={1} rowSpan={1}>
+      <GridItem colSpan={[1, 2]} rowSpan={1}>
         <CustomNumberInput
           label="Estoque"
           prefix="UNI"

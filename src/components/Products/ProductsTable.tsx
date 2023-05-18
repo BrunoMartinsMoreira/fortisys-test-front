@@ -52,11 +52,11 @@ export const ProductsTable = ({
         <Tbody>
           {products?.map((product) => (
             <Tr key={product.id}>
-              <Td px="5">{product.name} </Td>
+              <Td px="1">{product.name} </Td>
 
               <Td px="1">R${numberToString(product.price)}</Td>
-              <Td px="1"> {product.stockQuantity}</Td>
-              <Td px="1">
+              <Td px="10"> {product.stockQuantity}</Td>
+              <Td px="10">
                 <StatusBadge quantity={product.stockQuantity} />
               </Td>
               <Td px="1" display="flex" gap="2">
