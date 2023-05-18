@@ -21,4 +21,4 @@
 ### - Rode o comando `yarn start:dev`
 
 - Ele irá instalar as dependencias e iniciar a aplicação no `http://localhost:5173/`
-- para abri-la pression `o` no terminal
+- para abri-la pressione `o` no terminal
